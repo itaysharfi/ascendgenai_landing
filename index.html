@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ascend GenAI – SoCal GenAI Events</title>
+  <style>
+    :root {
+      --clr-primary: #1a2c38; /* updated to match logo text */
+      --clr-light: #f9f5f0;   /* updated to match logo background */
+      --clr-dark: #0d0149;
+      --clr-white: #ffffff;
+      --max-width: 720px;
+      --gap: 2rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--clr-dark);
+      line-height: 1.5;
+      background: var(--clr-white);
+    }
+    h1, h2 {
+      font-family: inherit;
+      margin: 0 0 1rem;
+      line-height: 1.15;
+    }
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    h2 {
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; border-radius: 4px; }
+    .wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 1rem; }
+    header, section { padding: 3rem 0; }
+    .hero { background: var(--clr-light); }
+    .hero-grid {
+      display: grid;
+      gap: var(--gap);
+      justify-items: center;
+      text-align: center;
+      align-items: start;
+    }
+    .hero-grid img { width: 200px; }
+    .label {
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--clr-primary);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .hero h1 { color: var(--clr-primary); font-size: 2.5rem; margin: 0 0 2rem; }
+    .hero h2 { font-size: 1rem; font-weight: 600; letter-spacing: 0.06em; color: var(--clr-primary); margin: 0 0 2rem; }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      background: var(--clr-primary);
+      color: var(--clr-white);
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      min-width: 160px;
+      text-align: center;
+      display: inline-block;
+    }
+    .btn:hover { background: #13212a; }
+    .why { background: var(--clr-dark); color: var(--clr-white); }
+    .why-title { color: var(--clr-white); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: var(--gap); }
+    .about { background: var(--clr-light); }
+    .about-grid {
+      display: grid;
+      gap: var(--gap);
+      align-items: start;
+      text-align: center;
+      justify-items: center;
+    }
+    .about-grid img { width: 220px; }
+    .about h2 { color: var(--clr-primary); font-size: 1.9rem; margin-bottom: 1rem; }
+    .about-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+    .about-buttons .btn { min-width: 140px; }
+    @media (min-width: 768px) {
+      .hero-grid { grid-template-columns: 30% 70%; text-align: left; }
+      .about-grid { grid-template-columns: 30% 70%; text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <img src="images/ascend-logo.jpg" alt="Ascend GenAI Logo" />
+      <div>
+        <span class="label">Ascend GenAI</span>
+        <h1>Southern California’s GenAI Community</h1>
+        <h2>Events, insight, and connection for the AI era</h2>
+        <a class="btn" href="https://www.linkedin.com/company/ascendgenai" target="_blank" rel="noopener">See Upcoming Events</a>
+      </div>
+    </div>
+  </header>
+  <section class="why">
+    <div class="wrap">
+      <h2 class="why-title">Why Ascend GenAI?</h2>
+      <p><strong>Ascend GenAI</strong> is a Southern California-based community focused on how Generative AI is reshaping industries, careers, and opportunities. We host curated in-person panels, networking events, and local meetups with real leaders doing real work in GenAI.</p>
+      <p>Whether you're shipping products, investing in new ventures, or navigating your next career move, Ascend GenAI gives you the signal, not just the noise.</p>
+    </div>
+  </section>
+  <section class="about">
+    <div class="wrap about-grid">
+      <img src="images/profile.jpg" alt="Portrait of Itay Sharfi" />
+      <div>
+        <h2>Meet the Organizer</h2>
+        <p><strong>Itay Sharfi</strong> is the founder of Ascend GenAI. A former Senior Product Manager at Google, he led privacy and infrastructure efforts across global AdTech platforms. He currently teaches computer science at Cal State Fullerton and runs <a href="https://applicationowl.com" style="color:var(--clr-primary);" target="_blank">Application Owl</a>, a GenAI-driven job search platform.</p>
+        <p>Previously, Itay led Mobile Monday US, a nonprofit community with monthly events that drew thousands of regular participants across four major cities—connecting tech professionals, founders, and product leaders around emerging innovation.</p>
+        <p>Itay built Ascend GenAI to bring high-quality conversations to SoCal—connecting builders, thinkers, and doers in one room to talk about what’s really happening in AI.</p>
+        <div class="about-buttons">
+          <a class="btn" href="https://www.linkedin.com/in/itaysharfi/" target="_blank" rel="noopener">Follow him on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
