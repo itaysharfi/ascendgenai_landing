@@ -10,7 +10,7 @@
       --clr-light: #f9f5f0;   /* updated to match logo background */
       --clr-dark: #0d0149;
       --clr-white: #ffffff;
-      --max-width: 720px;
+      --max-width: 960px;
       --gap: 2rem;
     }
     *, *::before, *::after { box-sizing: border-box; }
@@ -49,7 +49,7 @@
       gap: var(--gap);
       justify-items: center;
       text-align: center;
-      align-items: start;
+      align-items: center;
     }
     .hero-grid img { width: 200px; }
     .label {
@@ -78,11 +78,17 @@
     .btn:hover { background: #13212a; }
     .why { background: var(--clr-dark); color: var(--clr-white); }
     .why-title { color: var(--clr-white); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: var(--gap); }
-    .about { background: var(--clr-light); }
+    .traction { background: var(--clr-light); }
+    .traction-title { color: var(--clr-primary); font-size: 2rem; text-transform: uppercase; text-align: center; margin-bottom: var(--gap); }
+    .stats { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-bottom: var(--gap); text-align: center; }
+    .stat strong { display: block; font-size: 1.1rem; color: var(--clr-primary); }
+    .stat span { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .highlights { text-align: center; }
+    .about { background: var(--clr-white); }
     .about-grid {
       display: grid;
       gap: var(--gap);
-      align-items: start;
+      align-items: center;
       text-align: center;
       justify-items: center;
     }
@@ -101,10 +107,12 @@
     <div class="wrap hero-grid">
       <img src="images/ascend-logo.jpg" alt="Ascend GenAI Logo" />
       <div>
-        <span class="label">Ascend GenAI</span>
         <h1>Southern California’s GenAI Community</h1>
         <h2>Events, insight, and connection for the AI era</h2>
-        <a class="btn" href="https://www.linkedin.com/company/ascendgenai" target="_blank" rel="noopener">See Upcoming Events</a>
+        <div class="about-buttons">
+          <a class="btn" href="https://lu.ma/ascendgenai" target="_blank" rel="noopener">See Upcoming Events</a>
+          <a class="btn" href="https://www.linkedin.com/company/ascendgenai" target="_blank" rel="noopener">Follow us on LinkedIn</a>
+        </div>
       </div>
     </div>
   </header>
@@ -115,14 +123,28 @@
       <p>Whether you're shipping products, investing in new ventures, or navigating your next career move, Ascend GenAI gives you the signal, not just the noise.</p>
     </div>
   </section>
+  <section class="traction">
+    <div class="wrap">
+      <h2 class="traction-title">Our Community</h2>
+      <div class="stats">
+        <div class="stat"><strong>Regular Events</strong><span>Curated Panels & Meetups</span></div>
+        <div class="stat"><strong>Growing Community</strong><span>Hundreds of Members</span></div>
+        <div class="stat"><strong>Top Speakers</strong><span>Industry Leaders & Founders</span></div>
+      </div>
+      <div class="highlights">
+        <p><strong>Notable speakers include:</strong> Stuart McClure (CEO of Qwiet AI, sold Cylance for $1.4B), leaders from Google DeepMind, enterprise AI executives, and startup founders.</p>
+        <p>All events are curated, in-person gatherings held at the Merage JCC in Irvine, CA.</p>
+      </div>
+    </div>
+  </section>
   <section class="about">
     <div class="wrap about-grid">
       <img src="images/profile.jpg" alt="Portrait of Itay Sharfi" />
       <div>
         <h2>Meet the Organizer</h2>
-        <p><strong>Itay Sharfi</strong> is the founder of Ascend GenAI. A former Senior Product Manager at Google, he led privacy and infrastructure efforts across global AdTech platforms. He currently teaches computer science at Cal State Fullerton and runs <a href="https://applicationowl.com" style="color:var(--clr-primary);" target="_blank">Application Owl</a>, a GenAI-driven job search platform.</p>
-        <p>Previously, Itay led Mobile Monday US, a nonprofit community with monthly events that drew thousands of regular participants across four major cities—connecting tech professionals, founders, and product leaders around emerging innovation.</p>
-        <p>Itay built Ascend GenAI to bring high-quality conversations to SoCal—connecting builders, thinkers, and doers in one room to talk about what’s really happening in AI.</p>
+        <p><strong>Itay Sharfi</strong> is the founder of Ascend GenAI. He currently leads AI Platform at Zendesk as a Product Lead and teaches computer science at Cal State Fullerton. Previously, he was a Senior Product Manager at Google, where he led privacy and infrastructure efforts across global AdTech platforms.</p>
+        <p>Itay also runs <a href="https://applicationowl.com" style="color:var(--clr-primary);" target="_blank">Application Owl</a>, a GenAI-driven job search platform. Earlier, he led Mobile Monday US, a nonprofit community with monthly events that drew thousands of regular participants across four major cities -connecting tech professionals, founders, and product leaders around emerging innovation.</p>
+        <p>Itay built Ascend GenAI to bring high-quality conversations to SoCal -connecting builders, thinkers, and doers in one room to talk about what’s really happening in AI.</p>
         <div class="about-buttons">
           <a class="btn" href="https://www.linkedin.com/in/itaysharfi/" target="_blank" rel="noopener">Follow him on LinkedIn</a>
         </div>
